@@ -17,9 +17,14 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/loop.bat -OutFile loop.bat
         Invoke-WebRequest https://growtopiagame.com/Growtopia-Installer.exe -OutFile GrowtopiaInstaller.exe
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855479731617792/GTBot.exe -OutFile GTBot.exe
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855527947632680/how_to_add_bots.txt -OutFile how_to_add_bots.txt
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855547137622046/bot.json -OutFile bot.json
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860856039863353414/MacroRecorder.zip -OutFile MacroRecorder.zip
     - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855977967222805/MacroRecorder.lnk -OutFile MacroRecorder.lnk
         Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok.zip
@@ -36,6 +41,10 @@ jobs:
         copy wallpaper.bat D:\a\wallpaper.bat
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy GrowtopiaInstaller.exe C:\Users\Public\Desktop\GrowtopiaInstaller.exe
+        copy GTBot.exe C:\Users\Public\Desktop\GTBot.exe
+        copy how_to_add_bots.txt C:\Users\Public\Desktop\how_to_add_bots.txt
+        copy bot.json C:\Users\Public\Desktop\bot.json
+        copy MacroRecorder.zip C:\Users\Public\Desktop\MacroRecorder.zip
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
