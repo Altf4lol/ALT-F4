@@ -35,7 +35,7 @@ jobs:
         copy wallpaper.png D:\a\wallpaper.png
         copy wallpaper.bat D:\a\wallpaper.bat
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
-        copy GrowtopiaInstaller.exe C:\Users\administrator\Desktop\GrowtopiaInstaller.exe
+        copy GrowtopiaInstaller.exe C:\Users\Public\Desktop\GrowtopiaInstaller.exe
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
