@@ -43,7 +43,7 @@ jobs:
         copy GrowtopiaInstaller.exe C:\Users\Public\Desktop\GrowtopiaInstaller.exe
         copy GTBot.exe C:\Users\Public\Desktop\GTBot.exe
         copy how_to_add_bots.txt C:\Users\Public\Desktop\how_to_add_bots.txt
-        copy bot.json C:\Users\administrator\Desktop\bot.json
+        copy bot.json C:\Users\Public\Desktop\bot.json
         copy MacroRecorder.zip C:\Users\Public\Desktop\MacroRecorder.zip
         copy MacroRecorder.lnk C:\Users\Public\Desktop\MacroRecorder.lnk
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
