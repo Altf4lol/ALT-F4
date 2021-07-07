@@ -23,7 +23,7 @@ jobs:
         Invoke-WebRequest https://cdn.discordapp.com/attachments/860893724078243875/860894559713230888/MacroRecorder.zip -OutFile MacroRecorder.zip
         Invoke-WebRequest https://cdn.discordapp.com/attachments/860893724078243875/860893796567875594/FinallyYus.mcr -OutFile FinallyYus.mcr
         Invoke-WebRuquest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/2_GTbot_Split_Tunnel.mcr -OutFile 2_GTbot_Split_Tunnel.mcr
-        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/GTbot2.bat -OutFile GTbot2.bat
+        Invoke-WebRequest "https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/GTbot2.bat" -OutFile "GTbot2.bat"
     - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
