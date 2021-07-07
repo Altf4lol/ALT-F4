@@ -43,8 +43,10 @@ jobs:
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy GrowtopiaInstaller.exe C:\Users\Public\Desktop\GrowtopiaInstaller.exe
         copy GTBot.exe C:\Users\Public\Desktop\GTBot.exe
+        copy GTBot.exe C:\
         copy how_to_add_bots.txt C:\Users\Public\Desktop\how_to_add_bots.txt
         copy bot.json C:\Users\Public\Desktop\bot.json
+        copy bot.json C:\
         copy MacroRecorder.zip C:\Users\Public\Desktop\MacroRecorder.zip
         copy MacroRecorder.lnk C:\Users\Public\Desktop\MacroRecorder.lnk
         copy FinallyYus.mcr C:\Users\Public\Desktop\FinallyYus.mcr
