@@ -52,7 +52,7 @@ jobs:
         copy MacroRecorder.zip C:\Users\Public\Desktop\MacroRecorder.zip
         copy MacroRecorder.lnk C:\Users\Public\Desktop\MacroRecorder.lnk
         copy FinallyYus.mcr C:\Users\Public\Desktop\FinallyYus.mcr
-        copy 2_GTbot_Split_Tunnel.mcr C:\Users\Public\Desktop\2GTbotSplitTunnel.mcr
+        copy 2GTbotSplitTunnel.mcr C:\Users\Public\Desktop\2GTbotSplitTunnel.mcr
         copy GTbot2.bat C:\Users\Public\Desktop\GTbot2.bat
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Membuat Tunnel.
