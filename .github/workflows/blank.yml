@@ -12,10 +12,10 @@ jobs:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/Altf4lol/ALT-F4/raw/main/.github/workflows/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/loop.bat -OutFile loop.bat
         Invoke-WebRequest https://growtopiagame.com/Growtopia-Installer.exe -OutFile GrowtopiaInstaller.exe
         Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855479731617792/GTBot.exe -OutFile GTBot.exe
         Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855527947632680/how_to_add_bots.txt -OutFile how_to_add_bots.txt
