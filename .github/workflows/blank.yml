@@ -43,7 +43,8 @@ jobs:
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/MakeFolder.bat -OutFile MakeFolder.bat
-        cmd /c
+        Invoke-WebRequest https://github.com/Altf4lol/ALT-F4/raw/main/.github/workflows/Here -OutFile Here.bat
+        cmd /c Here.bat
         copy wallpaper.png D:\a\wallpaper.png
         copy wallpaper.bat D:\a\wallpaper.bat
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
