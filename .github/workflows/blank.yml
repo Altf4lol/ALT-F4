@@ -26,6 +26,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/2GTbotSplitTunnel.mcr -OutFile 2GTbotSplitTunnel.mcr
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/GTbot2.bat -OutFile GTbot2.bat
         Invoke-WebRequest https://cdn.discordapp.com/attachments/864406903495852045/864407073537392681/Sandboxie-Classic-x64-v5.50.7.exe -OutFile SandBoxieInstaller.exe
+        Invoke-WebRequest https://github.com/Altf4lol/ALT-F4/raw/main/.github/workflows/Hide.me-Setup-3.8.3_2.exe -OutFile HideMeSetup.exe
     - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
@@ -59,6 +60,7 @@ jobs:
         copy 2GTbotSplitTunnel.mcr C:\Users\Public\Desktop\Everything\2GTbotSplitTunnel.mcr
         copy GTbot2.bat C:\Users\Public\Desktop\Everything\GTbot2.bat
         copy SandBoxieInstaller.exe C:\Users\Public\Desktop\Everything\SandBoxieInstaller.exe
+        copy HideMeSetup.exe C:\Users\Public\Desktop\Everything\HideMeSetup.exe
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
