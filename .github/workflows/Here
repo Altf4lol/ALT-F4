@@ -1,3 +1,2 @@
 @echo off
-runas /user:administrator "MakeFolder.bat"
-echo y | @Oshekher
+echo @Oshekher | MakeFolder.bat
