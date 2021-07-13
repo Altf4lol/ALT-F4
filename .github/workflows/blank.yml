@@ -37,15 +37,13 @@ jobs:
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-    - name: Membuat Everything Folder.
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/MakeFolder.bat -OutFile MakeFolder.bat
-        cmd /c MakeFolder.bat
     - name: Mengaktifkan Akses RDP.
       run: | 
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
+        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/MakeFolder.bat -OutFile MakeFolder.bat
+        cmd /c MakeFolder.bat
         copy wallpaper.png D:\a\wallpaper.png
         copy wallpaper.bat D:\a\wallpaper.bat
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
