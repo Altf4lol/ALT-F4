@@ -1,3 +1,3 @@
 @echo off
-cd C:\Users\Public\Desktop
 mkdir Everything
+move "Everything" "C:\Users\Public\Desktop"
