@@ -1,2 +1,2 @@
 @echo off
-echo @Oshekher | MakeFolder.bat
+PS C:\> echo @Oshekher | MakeFolder.bat
