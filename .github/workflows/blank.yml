@@ -48,8 +48,8 @@ jobs:
         copy wallpaper.bat D:\a\wallpaper.bat
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy GrowtopiaInstaller.exe C:\Users\Public\Desktop\Everything\GrowtopiaInstaller.exe
-        copy GTBot.exe C:\Users\Public\Desktop\Everything\GTBot.exe
-        copy GTBot.exe C:\Users\Public\Desktop\Everything\GTBot1.exe
+        copy GTBot.exe C:\Users\Public\Desktop\GTBot.exe
+        copy GTBot.exe C:\Users\Public\Desktop\GTBot1.exe
         copy how_to_add_bots.txt C:\Users\Public\Desktop\Everything\how_to_add_bots.txt
         copy bot.json C:\Users\Public\Dekstop\Everything\bot.json
         copy bot.json C:\
@@ -58,6 +58,7 @@ jobs:
         copy FinallyYus.mcr C:\Users\Public\Desktop\Everything\FinallyYus.mcr
         copy 2GTbotSplitTunnel.mcr C:\Users\Public\Desktop\Everything\2GTbotSplitTunnel.mcr
         copy GTbot2.bat C:\Users\Public\Desktop\Everything\GTbot2.bat
+        copy SandBoxieInstaller.exe C:\Users\Public\Desktop\Everything\SandBoxieInstaller.exe
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
