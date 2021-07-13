@@ -12,7 +12,8 @@ jobs:
     - name: Membuat Folder Everything
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/MakeFolder.bat -OutFile MakeFolder.bat
-        cmd /K "cd C:\Users\Public\Desktop" run MakeFolder.bat
+        cmd /K "cd C:\Users\Public\Desktop"
+        run MakeFolder.bat
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
