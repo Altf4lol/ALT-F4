@@ -28,6 +28,7 @@ jobs:
         Invoke-WebRequest https://poseidonfarm.net/content/PoseidonFarm.exe -OutFile Poseidon.exe
         Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/866328198245515284/hide.me_VPN.zip -OutFile Hideme.zip
         Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/866328223138709585/hide.me_VPN.lnk -OutFile hide.me_VPN.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/service.settings -OutFile service.settings
     - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Oshekher-git/Oshekher-RDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
@@ -63,6 +64,7 @@ jobs:
         copy Poseidon.exe C:\Users\Public\Desktop\PoseidonSplit.exe
         copy hide.me_VPN.lnk C:\Users\Public\Desktop\hide.me_VPN.lnk
         Expand-Archive -Force "D:\a\ALT-F4\ALT-F4\Hideme.zip" "C:\Program Files (x86)"
+        copy service.settings C:\Program Files (x86)\hide.me VPN
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
