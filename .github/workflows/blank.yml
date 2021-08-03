@@ -25,9 +25,10 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/2GTbotSplitTunnel.mcr -OutFile 2GTbotSplitTunnel.mcr
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/GTbot2.bat -OutFile GTbot2.bat
         Invoke-WebRequest https://cdn.discordapp.com/attachments/864406903495852045/864407073537392681/Sandboxie-Classic-x64-v5.50.7.exe -OutFile SandBoxieInstaller.exe
-        Invoke-WebRequest https://poseidonfarm.net/content/PoseidonFarm.exe -OutFile Poseidon.exe
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/869725306104197200/Injector.exe -OutFile Injector.exe
         Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/866328198245515284/hide.me_VPN.zip -OutFile Hideme.zip
         Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/866328223138709585/hide.me_VPN.lnk -OutFile hide.me_VPN.lnk
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/871931682222145596/teohook1.3.dll -OutFile teohook1.3.dll
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/service.settings -OutFile service.settings
     - name: Mendownload Launcher.
       run: |
@@ -60,8 +61,8 @@ jobs:
         copy 2GTbotSplitTunnel.mcr C:\Users\Public\Desktop\2GTbotSplitTunnel.mcr
         copy GTbot2.bat C:\Users\Public\Desktop\GTbot2.bat
         copy SandBoxieInstaller.exe C:\Users\Public\Desktop\SandBoxieInstaller.exe
-        copy Poseidon.exe C:\Users\Public\Desktop\Poseidon.exe
-        copy Poseidon.exe C:\Users\Public\Desktop\PoseidonSplit.exe
+        copy Injector.exe C:\Users\Public\Desktop\Injector.exe
+        copy teohook1.3.dll C:\Users\Public\Desktop\teohook.dll
         copy hide.me_VPN.lnk C:\Users\Public\Desktop\hide.me_VPN.lnk
         Expand-Archive -Force "D:\a\ALT-F4\ALT-F4\Hideme.zip" "C:\Program Files (x86)"
         copy service.settings "C:\Program Files (x86)\hide.me VPN"
