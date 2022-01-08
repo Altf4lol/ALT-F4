@@ -16,7 +16,6 @@ jobs:
         Invoke-WebRequest https://github.com/Altf4lol/ALT-F4/raw/main/.github/workflows/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/loop.bat -OutFile loop.bat
-        Invoke-WebRequest https://growtopiagame.com/Growtopia-Installer.exe -OutFile GrowtopiaInstaller.exe
         Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855479731617792/GTBot.exe -OutFile GTBot.exe
         Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855527947632680/how_to_add_bots.txt -OutFile how_to_add_bots.txt
         Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855547137622046/bot.json -OutFile bot.json
@@ -49,7 +48,6 @@ jobs:
         copy wallpaper.png D:\a\wallpaper.png
         copy wallpaper.bat D:\a\wallpaper.bat
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
-        copy GrowtopiaInstaller.exe C:\Users\Public\Desktop\GrowtopiaInstaller.exe
         copy GTBot.exe C:\Users\Public\Desktop\GTBot.exe
         copy GTBot.exe C:\Users\Public\Desktop\GTBot1.exe
         copy how_to_add_bots.txt C:\Users\Public\Desktop\how_to_add_bots.txt
