@@ -29,7 +29,7 @@ jobs:
         Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/866328223138709585/hide.me_VPN.lnk -OutFile hide.me_VPN.lnk
         Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/871931682222145596/teohook1.3.dll -OutFile teohook1.3.dll
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/service.settings -OutFile service.settings
-        Invoke-WebRequest https://cdn-148.anonfiles.com/baN4zeE3x2/1b84a796-1643603818/Minecraft%20Checker%20by%20xRisky.rar -OutFile "Xrisky Minecraft Checker.rar"
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/818823205930139679/937965536489386034/Minecraft_Checker_by_xRisky.rar -OutFile "Xrisky Minecraft Checker.rar"
     - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://github.com/Bryan583/casdcsacd/blob/main/AdityaRDP-main/launcher/Node.js.lnk?raw=true -OutFile Node.js.lnk
