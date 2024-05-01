@@ -16,20 +16,6 @@ jobs:
         Invoke-WebRequest https://github.com/Altf4lol/ALT-F4/raw/main/.github/workflows/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/loop.bat -OutFile loop.bat
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855479731617792/GTBot.exe -OutFile GTBot.exe
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855527947632680/how_to_add_bots.txt -OutFile how_to_add_bots.txt
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855547137622046/bot.json -OutFile bot.json
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/860893724078243875/860894559713230888/MacroRecorder.zip -OutFile MacroRecorder.zip
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/860893724078243875/860893796567875594/FinallyYus.mcr -OutFile FinallyYus.mcr
-        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/2GTbotSplitTunnel.mcr -OutFile 2GTbotSplitTunnel.mcr
-        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/GTbot2.bat -OutFile GTbot2.bat
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/864406903495852045/864407073537392681/Sandboxie-Classic-x64-v5.50.7.exe -OutFile SandBoxieInstaller.exe
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/869725306104197200/Injector.exe -OutFile Injector.exe
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/866328198245515284/hide.me_VPN.zip -OutFile Hideme.zip
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/866328223138709585/hide.me_VPN.lnk -OutFile hide.me_VPN.lnk
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/824574048934690816/871931682222145596/teohook1.3.dll -OutFile teohook1.3.dll
-        Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/service.settings -OutFile service.settings
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/818823205930139679/937965536489386034/Minecraft_Checker_by_xRisky.rar -OutFile "Xrisky Minecraft Checker.rar"
     - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855977967222805/MacroRecorder.lnk -OutFile MacroRecorder.lnk
@@ -46,23 +32,6 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         copy wallpaper.png D:\a\wallpaper.png
         copy wallpaper.bat D:\a\wallpaper.bat
-        copy GTBot.exe C:\Users\Public\Desktop\GTBot.exe
-        copy GTBot.exe C:\Users\Public\Desktop\GTBot1.exe
-        copy how_to_add_bots.txt C:\Users\Public\Desktop\how_to_add_bots.txt
-        copy bot.json C:\Users\Public\Desktop\bot.json
-        copy bot.json C:\
-        copy MacroRecorder.zip C:\Users\Public\Desktop\MacroRecorder.zip
-        copy MacroRecorder.lnk C:\Users\Public\Desktop\MacroRecorder.lnk
-        copy FinallyYus.mcr C:\Users\Public\Desktop\FinallyYus.mcr
-        copy 2GTbotSplitTunnel.mcr C:\Users\Public\Desktop\2GTbotSplitTunnel.mcr
-        copy GTbot2.bat C:\Users\Public\Desktop\GTbot2.bat
-        copy SandBoxieInstaller.exe C:\Users\Public\Desktop\SandBoxieInstaller.exe
-        copy Injector.exe C:\Users\Public\Desktop\Injector.exe
-        copy teohook1.3.dll C:\Users\Public\Desktop\teohook.dll
-        copy hide.me_VPN.lnk C:\Users\Public\Desktop\hide.me_VPN.lnk
-        Expand-Archive -Force "D:\a\ALT-F4\ALT-F4\Hideme.zip" "C:\Program Files (x86)"
-        copy service.settings "C:\Program Files (x86)\hide.me VPN"
-        copy "Xrisky Minecraft Checker.rar" "C:\Users\Public\Desktop\Xrisky Minecraft Checker"
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
     - name: Connect Ke RDP Kamu CPU 2 Core - 7GB Ram - 256 SSD.
