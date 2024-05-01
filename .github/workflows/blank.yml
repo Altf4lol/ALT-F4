@@ -16,9 +16,9 @@ jobs:
         Invoke-WebRequest https://github.com/Altf4lol/ALT-F4/raw/main/.github/workflows/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Altf4lol/ALT-F4/main/.github/workflows/loop.bat -OutFile loop.bat
-    - name: Mendownload Launcher.
-      run: |
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855977967222805/MacroRecorder.lnk -OutFile MacroRecorder.lnk
+    #- name: Mendownload Launcher.
+    #  run: |
+    #   Invoke-WebRequest https://cdn.discordapp.com/attachments/860855406527381537/860855977967222805/MacroRecorder.lnk -OutFile MacroRecorder.lnk
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
